@@ -1,0 +1,82 @@
+/*
+Navbar styles
+*/
+
+nav {
+    background-color: #869E9A;
+    padding: 20px 80px;
+    display: flex;
+}
+
+#logo img {
+    height: 50px;
+}
+
+#nav-menu {
+    width: 80vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+#nav-menu span {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin: 20px 20px;
+}
+
+/*
+Homepage styles
+*/
+
+.splash-screen {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px #EBE1DF;
+}
+
+.splash-img {
+    width: 50vw;
+}
+
+.splash-text {
+    background-color: rgba(235, 226, 223, 0.2)
+}
+
+.splash-text h1 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 60px;
+    color: #534949;
+}
+
+.splash-text p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.splash-button {
+    width: 190px;
+    height: 60px;
+    border: none;
+    background-color: #9E8277;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+
+}
+
+#use-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.use-img {
+    height: 150px;
+    width: 150px;
+}

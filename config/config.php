@@ -2,10 +2,9 @@
 
 return [
     'database' => [
-        'name' => 'test',
+        'name' => 'handy',
         'username' => 'root',
-        'password' => '',
-        'connection' => 'mysql:host=127.0.0.1',
+        'password' => 'root',
         'options' => [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
         ]

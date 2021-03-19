@@ -17,6 +17,7 @@ $success = mysqli_real_connect(
 );
 
 require 'core/bootstrap.php';
+require 'controllers/index.php';
 
 require Router::load('routes.php')
     ->direct(Request::uri());

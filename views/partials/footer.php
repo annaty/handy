@@ -1,34 +1,34 @@
     <footer>
-        <div id="navigation">
+        <div id='navigation'>
             <ul>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href='../views/about-us.view.php'>About Us</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="mailto:handy-contact@gmail.com">Contact</a>
                 </li>
                 <li>
-                    <a href="#">GitHub</a>
+                    <a href='https://www.github.com/annaty/handy'>GitHub</a>
                 </li>
                 <li>
-                    <a href="#">Report an issue</a>
+                    <a href='https://www.github.com/annaty/handy/issues'>Report an issue</a>
                 </li>
             </ul>
         </div>
-        <div id="legal">
+        <div id='legal'>
             <ul>
                 <li>
-                    <a href="#">Legal mentions</a>
+                    <a href='../views/legal/privacy-policy.view.php'>Privacy policy</a>
                 </li>
                 <li>
-                    <a href="#">RGPD</a>
+                    <a href='../views/legal/terms-conditions.view.php'>Terms & Conditions</a>
                 </li>
                 <li>
-                    <a href="#">Lorem ipsum</a>
+                    <a href='../views/legal/terms-service.view.php'>Terms of service</a>
                 </li>
             </ul>
         </div>
-        <div id="brand">
+        <div id='brand'>
             <span>© 2021 Handy</span>
         </div>
     </footer>

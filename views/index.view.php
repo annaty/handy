@@ -16,7 +16,7 @@
     </div>
 </header>
 
-<div>
+<div id="div-use-list">
     <ul class="use-list">
         <li>
             <img src="../public/assets/media/images/use-icons/portfolio.svg" class="use-img">

@@ -1,23 +1,24 @@
 <?php
 
-$user = 'root';
-$password = 'root';
-$db = 'handy';
-$host = 'localhost';
-$port = 3306;
+// $user = 'root';
+// $password = 'root';
+// $db = 'handy';
+// $host = 'localhost';
+// $port = 3306;
 
-$link = mysqli_init();
-$success = mysqli_real_connect(
-   $link, 
-   $host, 
-   $user, 
-   $password, 
-   $db,
-   $port
-);
+// $link = mysqli_init();
+// $success = mysqli_real_connect(
+//    $link, 
+//    $host, 
+//    $user, 
+//    $password, 
+//    $db,
+//    $port
+// );
 
-require 'core/bootstrap.php';
-require 'controllers/index.php';
+require('core/bootstrap.php');
+require('controllers/index.php');
 
-require Router::load('routes.php')
-    ->direct(Request::uri());
+if (Request::uri() !== 'handy') {
+    Require Router::load('routes.php')->redirect(Request::uri());
+}

@@ -1,17 +1,17 @@
 <nav>
     <div id='logo'>
-        <a href='../controllers/index.php'><img src='../public/assets/media/images/logo.svg'></a>
+        <a href='/handy/index.php'><img src='public/assets/media/images/logo.svg'></a>
     </div>
     <div id='nav-menu'>
         <ul>
             <li>
-                <a href='../controllers/discover.php'>Discover</a>
+                <a href='discover.php'>Discover</a>
             </li>
             <li>
-                <a href='../controllers/join.php'>Join</a>
+                <a href='join'>Join</a>
             </li>
             <li>
-                <a href='../controllers/connect.php'>Connect</a>
+                <a href='connect'>Connect</a>
             </li>
         </ul>
     </div>

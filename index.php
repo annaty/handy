@@ -16,6 +16,7 @@
 //    $port
 // );
 
+// die();
 require('core/bootstrap.php');
 require('controllers/index.php');
 

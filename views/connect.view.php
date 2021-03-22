@@ -5,11 +5,11 @@
         <form action='' method='post'>
             <h1>Log in</h1>
             <div class='login-input'>
-                <img src='public/assets/media/images/login-page/mail.png'>
+                <img src='/handy/public/assets/media/images/login-page/mail.png'>
                 <input type='text' name='email' id='email' placeholder='yourname@domain.com' required>
             </div>
             <div class='login-input'>
-                <img src='public/assets/media/images/login-page/key.png'>
+                <img src='/handy/public/assets/media/images/login-page/key.png'>
                 <input type='email' name='password' id='password' placeholder='Password' required>
             </div>
             <a class='' href='#'>Forgot password?</a>

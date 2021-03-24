@@ -1,20 +1,16 @@
-<?php require('partials/head.php'); ?>
+<?php require("..\..\myclass\Form.php");
+$form = new Form($_POST);
+?>
 
-<div class='content'>
-    <form action="page2_form.php" method="post">
-        <label>Full Name :<span>*</span></label>
-        <input name="name" type="text" placeholder="Ex-James Anderson" required>
-        <label>Email :<span>*</span></label>
-        <input name="email" type="email" placeholder="Ex-anderson@gmail.com" required>
-        <label>Contact :<span>*</span></label>
-        <input name="contact" type="text" placeholder="10-digit number" required>
-        <label>Password :<span>*</span></label>
-        <input name="password" type="Password" placeholder="*****" />
-        <label>Re-enter Password :<span>*</span></label>
-        <input name="confirm" type="password" placeholder="*****">
-        <input type="reset" value="Reset" />
-        <input type="submit" value="Next" />
-    </form>
-</div>
+<form action="step2.view.php" method="post">
+    <?php
+        echo $form->input('name','text');
+        echo $form->input('lastname','text');
+        echo $form->input('password','password');
+        echo $form->input('confirm password','password');
+        echo $form->input('email',' email');
+        echo $form->submit('');
 
-<?php require('partials/footer.php'); ?>
+       
+    ?>
+</form>

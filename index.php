@@ -20,6 +20,7 @@
 require('core/bootstrap.php');
 require('controllers/index.php');
 
+
 if (Request::uri() !== 'handy') {
     Require Router::load('routes.php')->redirect(Request::uri());
 }

@@ -1,4 +1,5 @@
-<?php require("..\..\myclass\Form.php");
+<?php require "..\..\myclass\Form.php";
+require "..\partials\head.php";
 $form = new Form($_POST);
 ?>
 
@@ -10,7 +11,5 @@ $form = new Form($_POST);
         echo $form->input('confirm password','password');
         echo $form->input('email',' email');
         echo $form->submit('');
-
-       
     ?>
 </form>

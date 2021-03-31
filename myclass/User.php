@@ -1,11 +1,11 @@
 <?php
 class User
 {
-    public $_name;
-    public $_lastName;
-    public $_email;
+    private $_name;
+    private $_lastName;
+    private $_email;
     private $_skill = array();
-    public $_password;
+    private $_password;
 
     public function __contruct(string $name, string $lastName, string $email, $password)
     {
@@ -13,6 +13,7 @@ class User
         $this-> _lastName = $lastName;
         $this-> _email = $email;
         $this-> _password = $password;
+        
     }
 
     public function new_skill($skill)

@@ -1,10 +1,9 @@
-<?php require("..\..\myclass\User.php");
+<?php 
 echo $_POST['name'],'<br>';
 
-$user1 = new User($_POST['name'],$_POST['lastname'],$_POST['email'],$_POST['password']);
+$pdo =new PDO('mysql:dbname=handy;host=localhost', 'root', '');
 
-$user2  = new User("moi",'toi', ' lui','code');
 
-var_dump($user1->_name);
+$pdo->exec('INSERT INTO utilisateur SET name="'.$_POST['name'].'", last_name="'.$_POST['lastname'].'", email="'.$_POST['email'].'" ');
 
-var_dump($user2->_name);
+

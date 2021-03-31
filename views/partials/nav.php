@@ -8,7 +8,7 @@
                 <a href='discover.php'>Discover</a>
             </li>
             <li>
-                <a href='join.php'>Join</a>
+                <a href='\..\..\..\controllers\join.php'>Join</a>
             </li>
             <li>
                 <a href='connect.php'>Connect</a>

@@ -1,17 +1,17 @@
 <nav>
-    <div id='logo'>
-        <a href='/handy/index.php'><img src='/handy/public/assets/media/images/logo.svg'></a>
+    <div id='logo' class="<?= ($uri == '/') ? 'active' : '' ?>">
+        <a href="<?= DOMAIN ?>/"><img src='/handy/public/assets/media/images/logo.svg'></a>
     </div>
     <div id='nav-menu'>
         <ul>
-            <li>
-                <a href='discover.php'>Discover</a>
+            <li class="<?= ($uri == '/discover') ? 'active' : '' ?>">
+                <a href="<?= DOMAIN ?>/discover">Discover</a>
             </li>
-            <li>
-                <a href='join.php'>Join</a>
+            <li class="<?= ($segments[1] == 'join') ? 'active' : '' ?>">
+                <a href="<?= DOMAIN ?>/join">Join</a>
             </li>
-            <li>
-                <a href='connect.php'>Connect</a>
+            <li class="<?= ($uri == '/connect') ? 'active' : '' ?>">
+                <a href="<?= DOMAIN ?>/connect">Connect</a>
             </li>
         </ul>
     </div>

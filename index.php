@@ -1,25 +1,19 @@
 <?php
 
-// $user = 'root';
-// $password = 'root';
-// $db = 'handy';
-// $host = 'localhost';
-// $port = 3306;
+session_start();
+define('__REALPATH__', __DIR__);
 
-// $link = mysqli_init();
-// $success = mysqli_real_connect(
-//    $link, 
-//    $host, 
-//    $user, 
-//    $password, 
-//    $db,
-//    $port
-// );
+$domain = '/handy'; // Pour le prof
+define('DOMAIN', $domain);
+$uri = str_replace($domain, '', $_SERVER['REQUEST_URI']);
+$segments = explode('/', $uri);
 
-// die();
-require('core/bootstrap.php');
-require('controllers/index.php');
+require_once __REALPATH__ . '/core/functions.php';
 
-if (Request::uri() !== 'handy') {
-    Require Router::load('routes.php')->redirect(Request::uri());
-}
+// Uncomment if down to maintenance mode
+//maintenance();
+
+$page = get_page($uri, $segments);
+require __REALPATH__ . '/views/partials/head.php';
+echo $page;
+require __REALPATH__ . '/views/partials/footer.php';

@@ -1,7 +1,3 @@
-<?php require('partials/head.php'); ?>
-
 <div class='content'>
-    
+    <h1>Discover page content</h1>
 </div>
-
-<?php require('partials/footer.php'); ?>

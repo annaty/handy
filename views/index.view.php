@@ -1,4 +1,3 @@
-<?php require('partials/head.php'); ?>
 
 <div class='content'>
     <header>
@@ -39,5 +38,3 @@
         </ul>
     </div>
 </div>
-
-<?php require('partials/footer.php'); ?>

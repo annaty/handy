@@ -1,5 +1,3 @@
-<?php require('partials/head.php'); ?>
-
 <div class='content'>
     <form action="page2_form.php" method="post">
         <label>Full Name :<span>*</span></label>
@@ -16,5 +14,3 @@
         <input type="submit" value="Next" />
     </form>
 </div>
-
-<?php require('partials/footer.php'); ?>

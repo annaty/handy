@@ -1,5 +1,3 @@
-<?php require('partials/head.php'); ?>
-
 <div class='content' id='login-page'>
     <div class='container'>
         <form action='' method='post'>
@@ -25,5 +23,3 @@
         </p>
     </div>
 </div>
-
-<?php require('partials/footer.php'); ?>

@@ -1,1 +1,0 @@
-<?php require('../views/join/step1.view.php'); ?>
